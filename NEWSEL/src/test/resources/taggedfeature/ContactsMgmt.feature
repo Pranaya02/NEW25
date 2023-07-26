@@ -11,7 +11,7 @@ Scenario: Update a Contact
 Given User is logged in
 When User update a Contact
  
- @SmokeTest
+ @RegressionTest
 Scenario: Delete a  Contact
 Given User is logged in
 When User delete a Contact
