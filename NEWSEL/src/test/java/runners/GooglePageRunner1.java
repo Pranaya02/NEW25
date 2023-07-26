@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features = "src\\test\\resources\\features\\GoogleSearchPage.feature"
+		features = "src\\test\\resources\\features\\SendEmail.feature"
     ,   glue = {"StepDef"} ,
 		monochrome = true ,
 		dryRun = false,

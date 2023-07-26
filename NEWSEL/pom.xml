@@ -10,6 +10,7 @@
 	    <version>4.10.0</version>
 	</dependency>
 	
+	
 	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 <dependency>
     <groupId>io.cucumber</groupId>
@@ -45,6 +46,14 @@
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v102 -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-devtools-v102</artifactId>
+    <version>4.4.0</version>
+    <scope>test</scope>
+</dependency>
+
 
 
 	 </dependencies>
