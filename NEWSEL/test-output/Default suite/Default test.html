@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 26 07:54:42 GMT 2023</td>
+<td>Started on:</td><td>Thu Jul 27 05:16:34 GMT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (839 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19557 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,154 +68,54 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.TaggedRunner.setUpClass()'><b>setUpClass</b><br>Test class: runners.TaggedRunner<br>Parameters: org.testng.TestRunner@35beb15e</td>
-<td><div><pre>io.cucumber.java.InvalidMethodSignatureException: A method annotated with BeforeAll or AfterAll must have one of these signatures:
- * public static void before_or_after_all()
-at StepDef.TaskMgmtStepdef.teardown()
-
-
-	at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
-	at io.cucumber.java.JavaStaticHookDefinition.createInvalidSignatureException(JavaStaticHookDefinition.java:44)
-	at io.cucumber.java.JavaStaticHookDefinition.requireValidMethod(JavaStaticHookDefinition.java:28)
-	at io.cucumber.java.JavaStaticHookDefinition.&lt;init&gt;(JavaStaticHookDefinition.java:17)
-	at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:37)
-	at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:43)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:67)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:58)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:33)
-	at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:41)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:174)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
-	at io.cucumber.core.runner.Runner.&lt;init&gt;(Runner.java:56)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:47)
-	at java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:40)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
-	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:86)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:124)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1267042315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1267042315'><pre>io.cucumber.java.InvalidMethodSignatureException: A method annotated with BeforeAll or AfterAll must have one of these signatures:
- * public static void before_or_after_all()
-at StepDef.TaskMgmtStepdef.teardown()
-
-
-	at io.cucumber.java.InvalidMethodSignatureException$InvalidMethodSignatureExceptionBuilder.build(InvalidMethodSignatureException.java:52)
-	at io.cucumber.java.JavaStaticHookDefinition.createInvalidSignatureException(JavaStaticHookDefinition.java:44)
-	at io.cucumber.java.JavaStaticHookDefinition.requireValidMethod(JavaStaticHookDefinition.java:28)
-	at io.cucumber.java.JavaStaticHookDefinition.&lt;init&gt;(JavaStaticHookDefinition.java:17)
-	at io.cucumber.java.GlueAdaptor.addDefinition(GlueAdaptor.java:37)
-	at io.cucumber.java.JavaBackend.lambda$loadGlue$1(JavaBackend.java:43)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:67)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:58)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:33)
-	at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:41)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:174)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
-	at io.cucumber.core.runner.Runner.&lt;init&gt;(Runner.java:56)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:47)
-	at java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:40)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
-	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:86)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:124)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<td title='runners.GooglePageRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.GooglePageRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid login", "Login into App"</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0
+	at java.base/java.util.Collections$EmptyList.get(Collections.java:4553)
+	at StepDef.LoginStepdef.user_enters_login_credentials(LoginStepdef.java:59)
+	at ?.User enters login credentials(file:///C:/Users/Administrator/git/NEW25/NEWSEL/src/test/resources/features/Login.feature:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1690041435", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690041435'><pre>java.lang.IndexOutOfBoundsException: Index: 0
+	at java.base/java.util.Collections$EmptyList.get(Collections.java:4553)
+	at StepDef.LoginStepdef.user_enters_login_credentials(LoginStepdef.java:59)
+	at ?.User enters login credentials(file:///C:/Users/Administrator/git/NEW25/NEWSEL/src/test/resources/features/Login.feature:30)
 </pre></div></td>
-<td>0</td>
-<td>runners.TaggedRunner@22ef9844</td></tr>
+<td>8</td>
+<td>runners.GooglePageRunner1@47987356</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.GooglePageRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.GooglePageRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Send email to user", "Email"</td>
+<td></td>
+<td>10</td>
+<td>runners.GooglePageRunner1@47987356</td></tr>
+<tr>
+<td title='runners.GooglePageRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.GooglePageRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Send email to user", "Email"</td>
+<td></td>
+<td>11</td>
+<td>runners.GooglePageRunner1@47987356</td></tr>
+<tr>
+<td title='runners.GooglePageRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.GooglePageRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Java tutorial", "Google Page Search"</td>
+<td></td>
+<td>16</td>
+<td>runners.GooglePageRunner1@47987356</td></tr>
+<tr>
+<td title='runners.GooglePageRunner1.runScenario()'><b>runScenario</b><br>Test class: runners.GooglePageRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Selenium tutorial", "Google Page Search"</td>
+<td></td>
+<td>17</td>
+<td>runners.GooglePageRunner1@47987356</td></tr>
 </table><p>
 </body>
 </html>
