@@ -8,10 +8,32 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class TaskMgmtStepdef {
-	@BeforeAll
-	public void setup() {
-		System.out.println("Before all the scenarios");
-	}
+//	@BeforeAll
+//	public void setup() {
+//		System.out.println("Before all the scenarios");
+//	}
+	
+
+		@Before (value="@SmokeTest", order=2)
+		public void initEdge() {
+		System.out.println("Edge Before Each Scenaio..");
+		}
+		
+//		@Before (value="@RegressionTest", order=2)
+//		public void initchrome () {
+//		System. out.println("Chrome Before Each Scenaio...");
+//		}
+//		
+//		@Before (value="@RegressionTest" , order=1)
+//		public void readPropertyReg() {
+//		System.out.println("Read from property file....Reg Test");
+	//	}
+		
+		@Before(value="@SmokeTest", order=1)
+		public void readPropertySmoke ( ) {
+		System.out.println("Read from property file....Smoke Test");
+		}
+				
 	@Before
 	public void eachScenario() {
 		System.out.println("Before each scenarios");
@@ -22,10 +44,10 @@ public class TaskMgmtStepdef {
 	}
 	
 	
-	@AfterAll
-	public void teardown() {
-		System.out.println("After all the scenarios");
-	}
+//	@AfterAll
+//	public void teardown() {
+//		System.out.println("After all the scenarios");
+//	}
 	
 	@Given("User is logged in")
 	public void user_is_logged_in() {
@@ -75,4 +97,5 @@ public class TaskMgmtStepdef {
 		 System.out.println("User deleted a Contact");
 
 }
-}
+	}
+

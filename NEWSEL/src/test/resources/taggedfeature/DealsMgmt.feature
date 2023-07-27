@@ -1,12 +1,17 @@
-@PhaseTwo
+@PhaseThree
+
+
 Feature: Task Management
 CRUD Operations for Task
 
+
+Background: Login into app
+ @SmokeTest
 Scenario: Create a Deal
 Given User is logged in
 When User create a Deal
  
- @SmokeTest
+ @RegressionTest @SmokeTest
 Scenario: Update a Deal
 Given User is logged in
 When User update a Deal

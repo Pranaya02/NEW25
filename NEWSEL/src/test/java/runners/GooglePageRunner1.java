@@ -1,5 +1,6 @@
 package runners;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -11,18 +12,22 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome = true ,
 		dryRun = false,
 		plugin = {"pretty" , 
-				"usage:target/reports/usageReport"  
-				,"html:target/reports/HtmlReport.html"
-				,"json:target/reports/JsonReport.json"
-				,"testng:target/reports/TESTNGReport.xml",
-		       "rerun:target/reports/failedScenarios.txt",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				//"usage:target/reports/usageReport" , 
+				"html:target/reports/HtmlReport.html"
+				//,"json:target/reports/JsonReport.json"
+				//,"testng:target/reports/TESTNGReport.xml",
+		      // "rerun:target/reports/failedScenarios.txt",
+			//	"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 		}
 		)
 
 
 
 public class GooglePageRunner1 extends AbstractTestNGCucumberTests {
- 
+   
+	@DataProvider(parallel=true)
+	public Object[][] scenarios(){
+		return super.scenarios();
+	}
   
 }
